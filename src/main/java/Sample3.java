@@ -25,6 +25,8 @@ public class Sample3 {
       List<String> list1 = Arrays.asList("java", "scala", "python", "shell", "ruby");
       long num1 = list1.parallelStream().filter(x -> x.length() < 5).count();
       System.out.println(num1);
+      list1.parallelStream().filter(x -> x.length() < 5).forEach(e -> System.out.println(e.toString()));;
+
 
   }
 }
