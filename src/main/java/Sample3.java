@@ -27,6 +27,9 @@ public class Sample3 {
       System.out.println(num1);
       list1.parallelStream().filter(x -> x.length() < 5).forEach(e -> System.out.println(e.toString()));
       list1.parallelStream().filter(x -> x.length() < 5).forEach(System.out::println);
+      System.out.println(
+
+      );
       System.out.println();
   }
 }
